@@ -11,7 +11,6 @@
 */
 
 const Env = use("Env");
-console.log(Env.get("REDIS_HOST"));
 
 module.exports = {
   /*
