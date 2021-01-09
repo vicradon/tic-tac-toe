@@ -229,6 +229,8 @@ class TicTacToeController {
 
   async onClose() {
     const username = this.request.cookie("username");
+    const a = await Redis.get("a");
+    console.log(a);
     if (!username) return;
   }
 }
