@@ -63,6 +63,30 @@ The controllers contain the bulk of the business logic of the app.
 
 The project follows an MVC architecture. Views are written using Adonis edge. The project uses pure javascript and bootstrap 5.
 
+## Docker Setup
+
+![docker](https://user-images.githubusercontent.com/40396070/104172582-ce23ff00-5404-11eb-8ce5-d98e017e089f.png)
+
+If you have docker locally, you can build the app's image using docker-compose.
+
+> Note, You can still use the project without Docker.
+
+### Steps
+
+1. Copy the .docker.env.example file to a .docker.env file
+
+```bash
+cp .docker.env.example .docker.env up -d
+```
+
+2. Add an APP_KEY (from adonis key:generate) and a REDIS_PASSWORD to the .docker.env file
+
+3. Run the docker-compose with the .env file
+
+```bash
+docker-compose --env-file .docker.env up -d
+```
+
 ## Contributing
 
 Feel free to open an issue if you notice any error in the code.
