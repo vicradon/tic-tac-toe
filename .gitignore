@@ -6,7 +6,7 @@ tmp
 
 # Environment variables, never commit this file
 .env
-.docker.env
+.env.docker
 
 # The development sqlite file
 database/*.sqlite
